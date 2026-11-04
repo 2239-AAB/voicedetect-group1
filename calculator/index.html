@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 360px; margin: 3rem auto; padding: 0 1rem; }
+    label { display: block; margin-top: 1rem; }
+    input { width: 100%; padding: .5rem; font-size: 1rem; box-sizing: border-box; }
+    #result { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <label>First number <input id="number-a" type="number"></label>
+  <label>Second number <input id="number-b" type="number"></label>
+  <label>Result <input id="result" type="text" readonly></label>
+
+  <!-- calculation.js holds the math; app.js only connects it to the page -->
+  <script src="calculation.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
